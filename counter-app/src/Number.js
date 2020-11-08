@@ -1,6 +1,6 @@
 import React from "react";
 
-fuction Number(){
+function Number(){
     return <h1>1</h1>
 }
 export default Number;
