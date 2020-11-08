@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
+import {Num} from"./App.js";
 
 function Add() {
+  const addfun = useContext(Num);
   return (
     <>
-      <button>+</button>
+      <button
+        onClick={() => {
+          addfun.plus();
+        }}
+      >
+          +
+      </button>
     </>
   );
 }

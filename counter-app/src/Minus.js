@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
+import {Num} from "./App.js";
 
-function Minus(){
-    return (<>
-    <button>-</button>
+function Minus() {
+  const minfun = useContext(Num);
+  return (
+    <>
+      <button
+        onClick={() => {
+          minfun.minus();
+        }}
+      >
+          -
+      </button>
     </>
-    );
+  );
 }
 export default Minus;
